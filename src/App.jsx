@@ -4,24 +4,31 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Contact from "./components/Contact"
 
-import './App.css'
-
 export default function App() {
     return (
         <div>
             <Navbar />
             <Header />
             <Contact 
-              img="src/images/Owner.png"
-              name="Felix"
-              phone="(212) 555-4567"
-              email="thecat@hotmail.com"
+                img="Owner.png"
+                name="Felix"
+                rating="5.0"
+                reviewCount={6}
+                phone="(212) 555-4567"
+                email="thecat@hotmail.com"
+                title="Renter"
+                price={136}
+              
             />
             <Contact 
-              img="src/images/Owner2.png"
-              name="Pumpkin"
-              phone="(0800) CAT KING"
-              email="pumpkin@scrimba.com"
+                img="Owner2.png"
+                name="Pumpkin"
+                rating="5.0"
+                reviewCount={5}
+                phone="(212) 555-4567"
+                email="thecat@hotmail.com"
+                title="Rentee"
+                price={100}
             />
             <Footer />
         </div>

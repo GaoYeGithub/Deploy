@@ -2,17 +2,19 @@ import React from "react"
 
 export default function Contact(props) {
     return (
-        <div className="contact-card">
-            <img src={props.img}/>
-            <h3>{props.name}</h3>
-            <div className="info-group">
-                <img src="./images/phone-icon.png" />
-                <p>{props.phone}</p>
+        <div className="card">
+            <img src={`src/images/${props.img}`} className="card--image" />
+            <div className="card--stats">
+                <img src="src/images/star.png" className="card--star" />
+                <span className="gray">{props.name}</span>
+                <span>{props.rating}</span>
+                <span className="gray">({props.reviewCount}) • </span>
+                <span className="gray">{props.phone}</span>
+                <span className="gray">{props.email}</span>
+                <span className="gray">{props.title}</span>
             </div>
-            <div className="info-group">
-                <img src="./images/mail-icon.png" />
-                <p>{props.email}</p>
-            </div>
+            <p>{props.title}</p>
+            <p><span className="bold">From ${props.price}</span> / person</p>
         </div>
     )
 }
