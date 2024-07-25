@@ -3,9 +3,9 @@ import React from "react"
 export default function Contact(props) {
     return (
         <div className="card">
-            <img src={`src/images/${props.img}`} className="card--image" />
+            <img src={`src/images/${props.img}`} className="card--image" alt={props.name} />
             <div className="card--stats">
-                <img src="src/images/star.png" className="card--star" />
+                <img src="src/images/star.png" className="card--star" alt="star" />
                 <span className="gray">{props.name}</span>
                 <span>{props.rating}</span>
                 <span className="gray">({props.reviewCount}) • </span>
@@ -18,3 +18,4 @@ export default function Contact(props) {
         </div>
     )
 }
+
